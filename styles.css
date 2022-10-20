@@ -1,0 +1,464 @@
+
+body{
+    background-color: rgba(71, 119, 57, 0.904);
+}
+.title-bar{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(226, 226, 226);
+    background-size:cover;
+    background-image: url("https://img.besthqwallpapers.com/Uploads/31-3-2018/46630/white-flowers-flower-frame-chrysanthemum-floral-background-white-chrysanthemum.jpg");
+    background-position: center;
+    background-position: fixed;
+    background-repeat:no-repeat;
+    height:250px
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:lucida Handwriting;
+}
+
+/* nav bar */
+.nav{
+    width:80%;
+    margin: auto;
+    /* margin-top: -16px; */
+    background-color: rgb(247, 247, 247);
+    border-bottom: 1px solid black;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    height: 50px;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+}
+nav li{
+    /* display:inline-block;
+    text-align: center;
+    margin:20px;
+    margin-left: 45px;
+    margin-right: 45px;*/
+    font-size: small;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+nav a{
+    color: green;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color:black
+}
+
+/* search bar */
+.searchBar{
+    text-align: center;
+}
+
+input{
+    width: 30%;
+    height: 35px;
+}
+
+.search-button{
+    height: 35px;
+}
+
+.search-button:hover{
+    color: darkgreen;
+}
+
+/* product page */
+.title{
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.productTitle{
+    border-bottom: 7px solid black;
+    border-bottom-style:double ;
+    text-shadow: 2px 2px rgb(255, 255, 255) ;
+    font-family: brush script mt;
+    font-size: 45px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    text-align: center;
+    margin: auto;
+}
+
+img:hover{
+    opacity: 90%;
+}
+
+/* main page */
+.frontP1{
+    margin-top: 5%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.frontP1 > h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.frontP1 > p{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 10%;
+
+}
+
+div > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+p > span{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid ;
+}
+
+li{
+    display:inline-block;
+    text-align: center;
+    margin:auto;
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    body{
+        background-color: rgba(71, 119, 57, 0.904);
+    }
+    .title-bar{
+        display:flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        background-color: rgb(226, 226, 226);
+        background-size:cover;
+        background-image: url("https://img.besthqwallpapers.com/Uploads/31-3-2018/46630/white-flowers-flower-frame-chrysanthemum-floral-background-white-chrysanthemum.jpg");
+        background-position: center;
+        background-position: fixed;
+        background-repeat:no-repeat;
+        height:250px
+    }
+    h1{
+        text-align: center;
+        margin:auto;
+        margin-top: 3%;
+        margin-left:30%;
+        margin-right:30%;
+        padding:30px;
+        display: block;
+        font-family:lucida Handwriting;
+    }
+    .nav{
+        width:80%;
+        margin: auto;
+        /* margin-top: -16px; */
+        background-color: rgb(247, 247, 247);
+        border-bottom: 1px solid black;
+        border-right: 1px solid;
+        border-left: 1px solid;
+        text-align: center;
+    }
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    nav li{
+        display:inline-block;
+        text-align: center;
+        margin:20px;
+        margin-left: 45px;
+        margin-right: 45px;
+    
+        position: relative;
+    }
+    
+    nav a{
+        color: green;
+        text-transform: uppercase;
+    }
+    nav a:hover{
+        color:black
+    }
+    
+    .searchBar{
+        text-align: center;
+    }
+    
+    input{
+        width: 30%;
+        height: 35px;
+    }
+    
+    .search-button{
+        height: 35px;
+    }
+    
+    .search-button:hover{
+        color: darkgreen;
+    }
+    
+    .title{
+        text-align: center;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    
+    .frontP1{
+        margin: 5% 23% 0 23%;
+        background-color: white;
+        border: 2px solid black;
+    }
+    
+    .frontP1 > p{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        margin-left: 10%;
+        margin-top: -3%;
+    
+    }
+
+
+    h2{
+        border-bottom: 4px solid;
+        text-shadow: 2px 2px rgb(255, 255, 255) ;
+        font-family: brush script mt;
+        font-size: 45px;
+    }
+    
+    div > ul{
+        margin: 0 10% 10% 10%;
+        display: inline-block;
+        text-align:center;
+    } 
+
+    .p1{
+        display: inline-block;
+    }
+    
+    .p2{
+        display: inline-block;
+    }
+
+    .p3{
+        display: inline-block;
+    }
+
+    .p4{
+        display: inline-block;
+    }
+
+    .p5{
+        display: inline-block;
+    }
+
+    .p6{
+        display: inline-block;
+    }
+
+    .p7{
+        display: inline-block;
+    }
+
+    .p8{
+        display: inline-block;
+    }
+
+    li{
+        display:inline-block;
+        text-align: center;
+        margin:auto;
+    }
+     img{
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        text-align: center;
+        margin: auto;
+    }
+    
+    img:hover{
+        opacity: 90%;
+    }
+    
+
+}
+
+@media only screen and (max-width: 280px) {
+    
+    body{
+        background-color: rgba(71, 119, 57, 0.904);
+    }
+    .title-bar{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+        background-color: rgb(226, 226, 226);
+        background-size:cover;
+        background-image: url("https://img.besthqwallpapers.com/Uploads/31-3-2018/46630/white-flowers-flower-frame-chrysanthemum-floral-background-white-chrysanthemum.jpg");
+        background-position: center;
+        background-position: fixed;
+        background-repeat:no-repeat;
+        height:250px
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family:lucida Handwriting;
+        font-size:x-large;
+    }
+    .nav{
+        width:80%;
+        margin: auto;
+        /* margin-top: -16px; */
+        background-color: rgb(247, 247, 247);
+        border-bottom: 1px solid black;
+        border-right: 1px solid;
+        border-left: 1px solid;
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+        height: 50px;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        list-style: none;
+    }
+    nav li{
+        /* display:inline-block;
+        text-align: center;
+        margin:20px;
+        margin-left: 45px;
+        margin-right: 45px;*/
+        font-size: x-small;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+    
+    nav a{
+        color: green;
+        text-transform: uppercase;
+    }
+    nav a:hover{
+        color:black
+    }
+    
+    .searchBar{
+        text-align: center;
+    }
+    
+    input{
+        width: 30%;
+        height: 35px;
+    }
+    
+    .search-button{
+        height: 35px;
+    }
+    
+    .search-button:hover{
+        color: darkgreen;
+    }
+    
+    .title{
+        text-align: center;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    
+    .frontP1{
+        margin-top: 5%;
+        background-color: white;
+        border: 2px solid black;
+    }
+    
+    .frontP1 > p{
+        /* padding:2%;
+        margin-left: 9%; */
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        margin-left: 10%;
+    
+    }
+
+    h2{
+        border-bottom: 4px solid;
+        text-shadow: 2px 2px rgb(255, 255, 255) ;
+        font-family: brush script mt;
+        font-size: 45px;
+    }
+    
+    div > ul{
+        list-style: none;
+        margin: auto;
+        text-align: center;
+    
+    }
+    
+    li{
+        display:inline-block;
+        text-align: center;
+        margin:auto;
+    }
+     img{
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        text-align: center;
+        margin: auto;
+    }
+    
+    img:hover{
+        opacity: 90%;
+    }
+}
