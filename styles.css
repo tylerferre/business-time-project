@@ -1,4 +1,5 @@
 
+/* phone size */
 body{
     background-color: rgba(71, 119, 57, 0.904);
 }
@@ -28,7 +29,6 @@ h1{
 .nav{
     width:80%;
     margin: auto;
-    /* margin-top: -16px; */
     background-color: rgb(247, 247, 247);
     border-bottom: 1px solid black;
     border-right: 1px solid;
@@ -44,11 +44,6 @@ nav ul{
     list-style: none;
 }
 nav li{
-    /* display:inline-block;
-    text-align: center;
-    margin:20px;
-    margin-left: 45px;
-    margin-right: 45px;*/
     font-size: small;
     position: relative;
     display: flex;
@@ -69,6 +64,7 @@ nav a:hover{
 .searchBar{
     text-align: center;
 }
+
 
 input{
     width: 30%;
@@ -106,13 +102,9 @@ img{
     margin: auto;
 }
 
-img:hover{
-    opacity: 90%;
-}
-
 /* main page */
 .frontP1{
-    margin-top: 5%;
+    margin: 5% ;
     background-color: white;
     border: 2px solid black;
 }
@@ -128,8 +120,56 @@ img:hover{
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin-left: 10%;
+    margin-left: 4%;
 
+}
+
+.frontp2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+   
+}
+
+.frontp3{
+    border: 2px solid black;
+    background-color: aliceblue;
+    width: 75%;
+    text-align: center;
+}
+
+.frontp3 > img{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    border:none;
+}
+.frontp3 > a {
+    color: black;
+}
+
+.frontp4{
+    background-color: aliceblue;
+    border: 2px solid black;
+    width: 75%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.frontp4 > img{
+    height: 70px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    border:none;
+}
+
+.frontp4 > a{
+    color: black;
 }
 
 div > ul{
@@ -154,7 +194,239 @@ li{
     margin:auto;
 }
 
+.frontBackPic{
+    text-align: center;
+    background-size: cover;
+    margin: 1% 4% 0 4%;
+    height: 630px;
+    border: 1px solid;
+    background-image: url("https://www.lovethispic.com/uploaded_images/417412-Light-Pink-Cherry-Blossoms-On-Pink-Background.jpg");
+}
 
+.frontBackPic > input{
+    width: 35px;
+    margin-top: 5%;
+}
+
+
+/*about page*/
+.about{
+    border: 2px solid;
+    background-color: aliceblue;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 15% 5% 15%;
+    padding: 3%
+}
+
+.pricing{
+    border: 2px solid;
+    background-color: aliceblue;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 20% 5% 20%;
+    padding: 3%;
+}
+
+.pricing > li > span{
+    border-bottom: 1px solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*contact page*/
+.hour{
+    border: 2px solid;
+    background-color: aliceblue;
+    height: 80%;
+    margin: 5% 20% 5% 20%;
+    padding: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.hour > h3{
+    text-align: center;
+}
+
+.hour > li > span{
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.info{
+    border: 2px solid;
+    background-color: aliceblue;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 10% 5% 10%;
+    padding: 3%;  
+}
+
+/* small phone size */
+@media only screen and (max-width: 280px) {
+    
+    body{
+        background-color: rgba(71, 119, 57, 0.904);
+    }
+    .title-bar{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+        background-color: rgb(226, 226, 226);
+        background-size:cover;
+        background-image: url("https://img.besthqwallpapers.com/Uploads/31-3-2018/46630/white-flowers-flower-frame-chrysanthemum-floral-background-white-chrysanthemum.jpg");
+        background-position: center;
+        background-position: fixed;
+        background-repeat:no-repeat;
+        height:250px
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family:lucida Handwriting;
+        font-size:x-large;
+    }
+
+    /*nav bar*/
+    .nav{
+        width:80%;
+        margin: auto;
+        background-color: rgb(247, 247, 247);
+        border-bottom: 1px solid black;
+        border-right: 1px solid;
+        border-left: 1px solid;
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+        height: 50px;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        list-style: none;
+    }
+    nav li{
+        font-size: x-small;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+    
+    nav a{
+        color: green;
+        text-transform: uppercase;
+    }
+    nav a:hover{
+        color:black
+    }
+    
+    .searchBar{
+        text-align: center;
+    }
+    
+    input{
+        width: 30%;
+        height: 35px;
+    }
+    
+    .search-button{
+        height: 35px;
+    }
+    
+    .search-button:hover{
+        color: darkgreen;
+    }
+    
+    .title{
+        text-align: center;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    
+    /* main page*/
+    .frontP1{
+        margin-top: 5%;
+        background-color: white;
+        border: 2px solid black;
+    }
+    
+    .frontP1 > p{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        margin-left: 10%;
+    
+    }
+
+    h2{
+        border-bottom: 4px solid;
+        text-shadow: 2px 2px rgb(255, 255, 255) ;
+        font-family: brush script mt;
+        font-size: 45px;
+    }
+    
+    div > ul{
+        list-style: none;
+        margin: auto;
+        text-align: center;
+    
+    }
+    
+    li{
+        display:inline-block;
+        text-align: center;
+        margin:auto;
+    }
+     img{
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        text-align: center;
+        margin: auto;
+    }
+    
+    img:hover{
+        opacity: 90%;
+    }
+
+    /*contact page*/
+    .info{
+        border: 2px solid;
+        background-color: aliceblue;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%; 
+    }
+
+    .hour{
+        margin: 5%
+    }
+
+    .pricing{
+        margin: 5%;
+    }
+
+    .about{
+        margin: 5%;
+    }
+
+}
+
+/* computer screen size */
 @media only screen and (min-width: 768px) {
     
     body{
@@ -185,10 +457,11 @@ li{
         display: block;
         font-family:lucida Handwriting;
     }
+
+/*nav bar*/
     .nav{
         width:80%;
         margin: auto;
-        /* margin-top: -16px; */
         background-color: rgb(247, 247, 247);
         border-bottom: 1px solid black;
         border-right: 1px solid;
@@ -244,6 +517,24 @@ li{
         margin-right: 35%;
     }
     
+    /* main page*/
+    .frontBackPic{
+        text-align: center;
+        background-size: cover;
+        margin: 1% 4% 0 4%;
+        height: 630px;
+        border: 1px solid;
+        background-image: url("https://www.lovethispic.com/uploaded_images/417412-Light-Pink-Cherry-Blossoms-On-Pink-Background.jpg");
+    }
+
+
+    /*color picker for fun*/
+
+    /* .frontBackPic > input{
+        width: 35px;
+        margin-top: 5%;
+    } */
+
     .frontP1{
         margin: 5% 23% 0 23%;
         background-color: white;
@@ -254,12 +545,63 @@ li{
         display: flex;
         flex-direction: row;
         align-content: center;
-        margin-left: 10%;
-        margin-top: -3%;
+
     
     }
 
+    .frontp2{
+        display:inline-block;
+        margin-top: 1%;
+        display: flex;
+        flex-direction:row ;
+        justify-content: space-evenly;
+    }
+    
+    .frontp3{
+        border: 2px solid black;
+        background-color: aliceblue;
+        width: 30%;
+        text-align: center;
+        margin-top: 1%;
+        height: 160px;
 
+    }
+    
+    .frontp3 > img{
+        height: 70px;
+        width: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        border:none;
+    }
+    .frontp3 > a {
+        color: black;
+    }
+
+    .frontp4{
+        background-color: aliceblue;
+        border: 2px solid black;
+        width: 30%;
+        margin-top: 1%;
+        text-align: center;
+        height: 160px;
+    }
+    
+    .frontp4 > img{
+        height: 70px;
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        border:none;
+    }
+    
+    .frontp4 > a{
+        color: black;
+    }
+
+        /*product page*/
     h2{
         border-bottom: 4px solid;
         text-shadow: 2px 2px rgb(255, 255, 255) ;
@@ -305,6 +647,10 @@ li{
         display: inline-block;
     }
 
+    .p9{
+        display: inline-block;
+    }
+
     li{
         display:inline-block;
         text-align: center;
@@ -317,148 +663,254 @@ li{
         text-align: center;
         margin: auto;
     }
-    
-    img:hover{
-        opacity: 90%;
-    }
-    
 
-}
-
-@media only screen and (max-width: 280px) {
-    
-    body{
-        background-color: rgba(71, 119, 57, 0.904);
-    }
-    .title-bar{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border: 1px solid black;
-        background-color: rgb(226, 226, 226);
-        background-size:cover;
-        background-image: url("https://img.besthqwallpapers.com/Uploads/31-3-2018/46630/white-flowers-flower-frame-chrysanthemum-floral-background-white-chrysanthemum.jpg");
-        background-position: center;
-        background-position: fixed;
-        background-repeat:no-repeat;
-        height:250px
-    }
-    h1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family:lucida Handwriting;
-        font-size:x-large;
-    }
-    .nav{
-        width:80%;
-        margin: auto;
-        /* margin-top: -16px; */
-        background-color: rgb(247, 247, 247);
-        border-bottom: 1px solid black;
-        border-right: 1px solid;
-        border-left: 1px solid;
-        text-align: center;
-    }
-    nav ul{
-        display: flex;
-        height: 50px;
-        margin: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-        list-style: none;
-    }
-    nav li{
-        /* display:inline-block;
-        text-align: center;
-        margin:20px;
-        margin-left: 45px;
-        margin-right: 45px;*/
-        font-size: x-small;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    
-    }
-    
-    nav a{
-        color: green;
-        text-transform: uppercase;
-    }
-    nav a:hover{
-        color:black
-    }
-    
-    .searchBar{
-        text-align: center;
-    }
-    
-    input{
-        width: 30%;
-        height: 35px;
-    }
-    
-    .search-button{
-        height: 35px;
-    }
-    
-    .search-button:hover{
-        color: darkgreen;
-    }
-    
-    .title{
-        text-align: center;
-        margin-left: 35%;
-        margin-right: 35%;
-    }
-    
-    .frontP1{
-        margin-top: 5%;
-        background-color: white;
-        border: 2px solid black;
-    }
-    
-    .frontP1 > p{
-        /* padding:2%;
-        margin-left: 9%; */
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        margin-left: 10%;
-    
-    }
-
-    h2{
-        border-bottom: 4px solid;
-        text-shadow: 2px 2px rgb(255, 255, 255) ;
-        font-family: brush script mt;
-        font-size: 45px;
-    }
-    
-    div > ul{
-        list-style: none;
-        margin: auto;
-        text-align: center;
-    
-    }
-    
-    li{
-        display:inline-block;
-        text-align: center;
-        margin:auto;
-    }
-     img{
-        width: 200px;
-        height: 200px;
+    /*about page*/
+    .pricing{
         border: 2px solid;
-        text-align: center;
-        margin: auto;
+        background-color: aliceblue;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 30% 5% 30%;
+        padding: 3%;
+    }
+
+    }
+
+    .pricing > li > span{
+        border-bottom: 1px solid;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     
-    img:hover{
-        opacity: 90%;
+    /*big computer screens*/
+    @media only screen and (min-width: 2500px){
+        
+        body{
+            background-color: rgba(71, 119, 57, 0.904);
+        }
+        .title-bar{
+            display:flex;
+            flex-direction: column;
+    
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            background-color: rgb(226, 226, 226);
+            background-size:cover;
+            background-image: url("https://img.besthqwallpapers.com/Uploads/31-3-2018/46630/white-flowers-flower-frame-chrysanthemum-floral-background-white-chrysanthemum.jpg");
+            background-position: center;
+            background-position: fixed;
+            background-repeat:no-repeat;
+            height:250px
+        }
+        h1{
+            text-align: center;
+            margin:auto;
+            margin-top: 3%;
+            margin-left:30%;
+            margin-right:30%;
+            padding:30px;
+            display: block;
+            font-family:lucida Handwriting;
+        }
+
+        /*nav bar*/
+        .nav{
+            width:80%;
+            margin: auto;
+            background-color: rgb(247, 247, 247);
+            border-bottom: 1px solid black;
+            border-right: 1px solid;
+            border-left: 1px solid;
+            text-align: center;
+        }
+        nav ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        nav li{
+            display:inline-block;
+            text-align: center;
+            margin:20px;
+            margin-left: 45px;
+            margin-right: 45px;
+        
+            position: relative;
+        }
+        
+        nav a{
+            color: green;
+            text-transform: uppercase;
+        }
+        nav a:hover{
+            color:black
+        }
+        
+        .searchBar{
+            text-align: center;
+        }
+        
+        input{
+            width: 30%;
+            height: 35px;
+        }
+        
+        .search-button{
+            height: 35px;
+        }
+        
+        .search-button:hover{
+            color: darkgreen;
+        }
+        
+        .title{
+            text-align: center;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+        
+        /* main page */
+        .frontBackPic{
+            background-size: cover;
+            margin: 1% 4% 0 4%;
+            height: 630px;
+            border: 1px solid;
+            background-position: center;
+            background-image: url("https://www.lovethispic.com/uploaded_images/417412-Light-Pink-Cherry-Blossoms-On-Pink-Background.jpg");
+        }
+    
+        .frontP1{
+            margin: 5% 23% 0 23%;
+            background-color: white;
+            border: 2px solid black;
+        }
+        
+        .frontP1 > p{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+    
+        
+        }
+    
+        .frontp2{
+            display:inline-block;
+            margin-top: 1%;
+            display: flex;
+            flex-direction:row ;
+            justify-content: space-evenly;
+        }
+        
+        .frontp3{
+            border: 2px solid black;
+            background-color: aliceblue;
+            width: 30%;
+            text-align: center;
+            margin-top: 1%;
+    
+        }
+        
+        .frontp3 > img{
+            height: 70px;
+            width: 70px;
+            display: flex;
+            flex-direction: row;
+            align-items: right;
+            border:none;
+        }
+        .frontp3 > a {
+            color: black;
+        }
+    
+        .frontp4{
+            background-color: aliceblue;
+            border: 2px solid black;
+            width: 30%;
+            margin-top: 1%;
+            text-align: center;
+        }
+        
+        .frontp4 > img{
+            height: 70px;
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: right;
+            border:none;
+        }
+        
+        .frontp4 > a{
+            color: black;
+        }
+    
+        /*procuct page*/
+        h2{
+            border-bottom: 4px solid;
+            text-shadow: 2px 2px rgb(255, 255, 255) ;
+            font-family: brush script mt;
+            font-size: 45px;
+        }
+        
+        div > ul{
+            margin: 0 10% 10% 10%;
+            display: inline-block;
+            text-align:center;
+        } 
+    
+        .p1{
+            display: inline-block;
+        }
+        
+        .p2{
+            display: inline-block;
+        }
+    
+        .p3{
+            display: inline-block;
+        }
+    
+        .p4{
+            display: inline-block;
+        }
+    
+        .p5{
+            display: inline-block;
+        }
+    
+        .p6{
+            display: inline-block;
+        }
+    
+        .p7{
+            display: inline-block;
+        }
+    
+        .p8{
+            display: inline-block;
+        }
+    
+        .p9{
+            display: inline-block;
+        }
+    
+        li{
+            display:inline-block;
+            text-align: center;
+            margin:auto;
+        }
+         img{
+            width: 200px;
+            height: 200px;
+            border: 2px solid;
+            text-align: center;
+            margin: auto;
+        }
+
     }
-}
+
+
